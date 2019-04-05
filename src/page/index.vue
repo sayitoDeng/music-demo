@@ -3,6 +3,7 @@
   <div class="main">
       <searchnav></searchnav>
       <slider></slider>
+      <today></today>
       <myfooter></myfooter>
   </div>
 </template>
@@ -11,6 +12,7 @@
 import searchnav from '../components/search-nav'
 import myfooter from '../components/footer'
 import slider from '../components/Swiper'
+import today from '../page/TodayPush'
 export default {
   data () {
     return {
@@ -19,10 +21,12 @@ export default {
   components:{
     searchnav,
     myfooter,
-    slider
+    slider,
+    today
   }
 }
 
 </script>
 <style scoped>
+ 
 </style>

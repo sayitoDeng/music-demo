@@ -7,6 +7,7 @@ import request from './utils/request'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueLazyload from 'vue-lazyload'
 import 'swiper/dist/css/swiper.css'
+import 'element-ui/lib/theme-chalk/index.css'
 import { Icon,Popover,Loading, Row, Col, Message, Notification } from 'element-ui';
 
 Vue.use(VueLazyload,{
