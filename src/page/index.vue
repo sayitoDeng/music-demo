@@ -10,6 +10,8 @@
       <div class="random">
         <img width="95%" src="//static1.qianqian.com/web/st/images/banner-ting.6c54584ee46aec38.jpg" @click="randomMusic">
       </div>
+      <!-- 音乐列表 -->
+      <musicNav @get_music="getMusic"></musicNav>
       <myfooter></myfooter>
   </div>
 </template>
@@ -19,6 +21,7 @@ import searchnav from '../components/search-nav'
 import myfooter from '../components/footer'
 import slider from '../components/Swiper'
 import today from '../page/TodayPush'
+import musicNav from '../page/MusicNav'
 export default {
   name:'index',
   inject:['getMusics'],
@@ -38,7 +41,8 @@ export default {
     searchnav,
     myfooter,
     slider,
-    today
+    today,
+    musicNav
   }
 }
 

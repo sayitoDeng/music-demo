@@ -56,7 +56,6 @@ export default {
   },
   methods: {
     getMusic(obj) { 
-      // TODO 方法有问题   获取不到obj
       this.$nextTick(function() {
         if (obj != null) {
           this.musicShowL = true;
@@ -221,7 +220,7 @@ export default {
   margin: 0 auto;
   width: 180px;
   height: 54px;
-  background: url(./assets/banner/topbar.png) center no-repeat;
+ /*  background: url(./assets/banner/topbar.png) center no-repeat; */
   background-position: 0 -6px;
 }
 /*推荐切换*/
