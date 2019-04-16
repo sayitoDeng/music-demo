@@ -39,7 +39,7 @@ export default {
 }
 
 </script>
-<style scoped>
+<style>
 .song-list{
     width:100%;
     height:13.5rem
@@ -69,19 +69,5 @@ export default {
     margin: 0 auto;
     padding-top: .6rem;
   }
-  .col_content{
-    width: 92.6%;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-bottom: .4rem;
-  }
-  .col_content .song-info{
-    margin-top: .5rem;
-  }
-  .col_content .song-info p{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+
 </style>

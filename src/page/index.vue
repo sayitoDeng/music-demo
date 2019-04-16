@@ -12,6 +12,9 @@
       </div>
       <!-- 音乐列表 -->
       <musicNav @get_music="getMusic"></musicNav>
+      <keep-alive>
+        <singer></singer>
+      </keep-alive>
       <myfooter></myfooter>
   </div>
 </template>
@@ -22,6 +25,7 @@ import myfooter from '../components/footer'
 import slider from '../components/Swiper'
 import today from '../page/TodayPush'
 import musicNav from '../page/MusicNav'
+import singer from '../page/Singer'
 export default {
   name:'index',
   inject:['getMusics'],
@@ -42,12 +46,28 @@ export default {
     myfooter,
     slider,
     today,
-    musicNav
+    musicNav,
+    singer
   }
 }
 
 </script>
-<style scoped>
+<style >
+.col_content{
+    width: 92.6%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: .4rem;
+  }
+  .col_content .song-info{
+    margin-top: .5rem;
+  }
+  .col_content .song-info p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
  .random{
     margin-bottom: 10px;
     display: flex;
