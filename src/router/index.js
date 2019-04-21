@@ -38,8 +38,12 @@ export default new Router({
               component: Classic
             },
           ]
-        }
-        
+        },
+        {
+          path:'/songlists',
+          name:'songLists',
+          component:()=> import('@/page/songsheet/songlists')
+        },
       ]
     }
   ]
